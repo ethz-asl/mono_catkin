@@ -6,7 +6,6 @@ catkin_simple()
 
 include(ExternalProject)
 
-
 file(MAKE_DIRECTORY ${CATKIN_DEVEL_PREFIX}/include/mono-2.0)
 
 set(MONO_VERSION 5.4.1.7)
