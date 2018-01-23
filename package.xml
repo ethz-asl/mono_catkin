@@ -1,0 +1,11 @@
+<package>
+  <name>mono_catkin</name>
+  <version>5.4.1</version>
+  <description>Catkin wrapper for Mono.</description>
+  <maintainer email="brik@ethz.ch">Rik Bähnemann</maintainer>
+
+  <license>See package</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+</package>
