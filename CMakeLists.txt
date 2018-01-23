@@ -10,12 +10,11 @@ file(MAKE_DIRECTORY ${CATKIN_DEVEL_PREFIX}/include/mono-2.0)
 
 set(MONO_VERSION 5.4.1.7)
 ExternalProject_Add(mono_src
-  GIT_REPOSITORY git@github.com:mono/mono.git
-  GIT_TAG mono-${MONO_VERSION}
+  URL https://download.mono-project.com/sources/mono/mono-${MONO_VERSION}.tar.bz2
   UPDATE_COMMAND ""
   CONFIGURE_COMMAND
     cd ../mono_src/
-    && ./autogen.sh
+    && ./configure
     --prefix=${CATKIN_DEVEL_PREFIX}
   BUILD_COMMAND
     cd ../mono_src/
